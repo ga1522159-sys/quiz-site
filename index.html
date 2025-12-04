@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positive Learning Quiz - Team & Registration</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="registration-screen" class="screen modern-registration-screen">
+        
+        <div class="team-showcase">
+            <h2 class="showcase-title">Meet Our Dedicated Team</h2>
+            <p class="showcase-description">We think smart, we work hard, we win together.</p>
+
+            <div class="professor-card">
+                <input type="file" id="prof-upload" accept="image/*" hidden>
+                <div class="photo-card-inner" onclick="document.getElementById('prof-upload').click()">
+                    <div class="photo-circle professor-photo">
+                        <img src="https://ui-avatars.com/api/?name=Prof&background=0D8ABC&color=fff&size=200" id="prof-img" alt="Professor">
+                    </div>
+                    <div class="upload-overlay"><i class="fa-solid fa-camera"></i></div>
+                </div>
+                <input type="text" class="name-input professor-name-input" value="Professor Jane Doe">
+                <div class="role-title">Project Supervisor</div>
+            </div>
+
+            <div class="student-card-grid">
+                <div class="person-card">
+                    <input type="file" id="s1-upload" accept="image/*" hidden>
+                    <div class="photo-card-inner" onclick="document.getElementById('s1-upload').click()">
+                        <div class="photo-circle"><img src="https://ui-avatars.com/api/?name=Student+1&background=random&color=fff&size=150" id="s1-img"></div>
+                        <div class="upload-overlay"><i class="fa-solid fa-camera"></i></div>
+                    </div>
+                    <input type="text" class="name-input" value="Student One">
+                </div>
+                <div class="person-card">
+                    <input type="file" id="s2-upload" accept="image/*" hidden>
+                    <div class="photo-card-inner" onclick="document.getElementById('s2-upload').click()">
+                        <div class="photo-circle"><img src="https://ui-avatars.com/api/?name=Student+2&background=random&color=fff&size=150" id="s2-img"></div>
+                        <div class="upload-overlay"><i class="fa-solid fa-camera"></i></div>
+                    </div>
+                    <input type="text" class="name-input" value="Student Two">
+                </div>
+                <div class="person-card">
+                    <input type="file" id="s3-upload" accept="image/*" hidden>
+                    <div class="photo-card-inner" onclick="document.getElementById('s3-upload').click()">
+                        <div class="photo-circle"><img src="https://ui-avatars.com/api/?name=Student+3&background=random&color=fff&size=150" id="s3-img"></div>
+                        <div class="upload-overlay"><i class="fa-solid fa-camera"></i></div>
+                    </div>
+                    <input type="text" class="name-input" value="Student Three">
+                </div>
+                <div class="person-card">
+                    <input type="file" id="s4-upload" accept="image/*" hidden>
+                    <div class="photo-card-inner" onclick="document.getElementById('s4-upload').click()">
+                        <div class="photo-circle"><img src="https://ui-avatars.com/api/?name=Student+4&background=random&color=fff&size=150" id="s4-img"></div>
+                        <div class="upload-overlay"><i class="fa-solid fa-camera"></i></div>
+                    </div>
+                    <input type="text" class="name-input" value="Student Four">
+                </div>
+                <div class="person-card">
+                    <input type="file" id="s5-upload" accept="image/*" hidden>
+                    <div class="photo-card-inner" onclick="document.getElementById('s5-upload').click()">
+                        <div class="photo-circle"><img src="https://ui-avatars.com/api/?name=Student+5&background=random&color=fff&size=150" id="s5-img"></div>
+                        <div class="upload-overlay"><i class="fa-solid fa-camera"></i></div>
+                    </div>
+                    <input type="text" class="name-input" value="Student Five">
+                </div>
+                <div class="person-card">
+                    <input type="file" id="s6-upload" accept="image/*" hidden>
+                    <div class="photo-card-inner" onclick="document.getElementById('s6-upload').click()">
+                        <div class="photo-circle"><img src="https://ui-avatars.com/api/?name=Student+6&background=random&color=fff&size=150" id="s6-img"></div>
+                        <div class="upload-overlay"><i class="fa-solid fa-camera"></i></div>
+                    </div>
+                    <input type="text" class="name-input" value="Student Six">
+                </div>
+                <div class="person-card">
+                    <input type="file" id="s7-upload" accept="image/*" hidden>
+                    <div class="photo-card-inner" onclick="document.getElementById('s7-upload').click()">
+                        <div class="photo-circle"><img src="https://ui-avatars.com/api/?name=Student+7&background=random&color=fff&size=150" id="s7-img"></div>
+                        <div class="upload-overlay"><i class="fa-solid fa-camera"></i></div>
+                    </div>
+                    <input type="text" class="name-input" value="Student Seven">
+                </div>
+                <div class="person-card">
+                    <input type="file" id="s8-upload" accept="image/*" hidden>
+                    <div class="photo-card-inner" onclick="document.getElementById('s8-upload').click()">
+                        <div class="photo-circle"><img src="https://ui-avatars.com/api/?name=Student+8&background=random&color=fff&size=150" id="s8-img"></div>
+                        <div class="upload-overlay"><i class="fa-solid fa-camera"></i></div>
+                    </div>
+                    <input type="text" class="name-input" value="Student Eight">
+                </div>
+                <div class="person-card">
+                    <input type="file" id="s9-upload" accept="image/*" hidden>
+                    <div class="photo-card-inner" onclick="document.getElementById('s9-upload').click()">
+                        <div class="photo-circle"><img src="https://ui-avatars.com/api/?name=Student+9&background=random&color=fff&size=150" id="s9-img"></div>
+                        <div class="upload-overlay"><i class="fa-solid fa-camera"></i></div>
+                    </div>
+                    <input type="text" class="name-input" value="Student Nine">
+                </div>
+                <div class="person-card">
+                    <input type="file" id="s10-upload" accept="image/*" hidden>
+                    <div class="photo-card-inner" onclick="document.getElementById('s10-upload').click()">
+                        <div class="photo-circle"><img src="https://ui-avatars.com/api/?name=Student+10&background=random&color=fff&size=150" id="s10-img"></div>
+                        <div class="upload-overlay"><i class="fa-solid fa-camera"></i></div>
+                    </div>
+                    <input type="text" class="name-input" value="Student Ten">
+                </div>
+            </div>
+        </div>
+
+        <div class="quiz-registration">
+            <h1 class="quiz-welcome-title">🚀 Ready for the Positive Quiz!</h1>
+            <p class="quiz-welcome-subtitle">Enter your name and access code to begin your learning journey.</p>
+            
+            <div class="input-form-group">
+                <label for="student-name" class="input-label">Your Name</label>
+                <input type="text" id="student-name" placeholder="E.g., John Smith" required>
+                
+                <label for="student-code" class="input-label">Access Code</label>
+                <input type="text" id="student-code" placeholder="E.g., 12345" required>
+                
+                <button id="start-quiz-btn" class="start-quiz-button">Start Quiz</button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Quiz screen removed - now on separate questions.html page -->
+
+    <div id="results-screen" class="screen">
+        <div class="results-header">
+            <div class="results-header-content">
+                <h2>🎉 Exam Complete!</h2>
+                <p class="results-subtitle">Your results are ready</p>
+            </div>
+        </div>
+        
+        <div class="results-content-wrapper">
+            <!-- Green Success Block -->
+            <div class="success-metrics-block">
+                <div class="success-block-header">
+                    <i class="fas fa-trophy"></i>
+                    <h3>Exam Results</h3>
+                </div>
+                <div class="success-metrics-grid">
+                    <div class="success-metric-item">
+                        <div class="metric-icon-wrapper">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <div class="metric-content">
+                            <span class="metric-label">Student Name</span>
+                            <span class="metric-value" id="final-name">-</span>
+                        </div>
+                    </div>
+                    <div class="success-metric-item">
+                        <div class="metric-icon-wrapper">
+                            <i class="fas fa-question-circle"></i>
+                        </div>
+                        <div class="metric-content">
+                            <span class="metric-label">Total Questions</span>
+                            <span class="metric-value" id="total-q">0</span>
+                        </div>
+                    </div>
+                    <div class="success-metric-item">
+                        <div class="metric-icon-wrapper">
+                            <i class="fas fa-check-double"></i>
+                        </div>
+                        <div class="metric-content">
+                            <span class="metric-label">Questions Answered</span>
+                            <span class="metric-value" id="answered-count">0</span>
+                        </div>
+                    </div>
+                    <div class="success-metric-item highlight">
+                        <div class="metric-icon-wrapper">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="metric-content">
+                            <span class="metric-label">Correct Answers</span>
+                            <span class="metric-value" id="correct-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Incorrect Answers Section -->
+            <div id="incorrect-section" class="incorrect-section">
+                <div class="section-header">
+                    <i class="fas fa-clipboard-check"></i>
+                    <h3>Answer Review & Corrections</h3>
+                </div>
+                <div id="review-list"></div>
+            </div>
+
+            <!-- Arabic Congratulatory Message -->
+            <div class="arabic-message-block">
+                <div class="arabic-message-content">
+                    <i class="fas fa-star"></i>
+                    <p class="arabic-text">تهانينا على إتمام الامتحان، نقدر جهودك، ونتمنى لك المزيد من النجاح والتميز</p>
+                    <p class="arabic-translation">Congratulations on completing the exam, we appreciate your efforts, and we wish you continued success and excellence.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="data/questions.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Results - Positive Learning</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="results-screen" class="screen active results-page">
+        <div class="results-header">
+            <div class="results-header-content">
+                <h2>🎉 Exam Complete!</h2>
+                <p class="results-subtitle">Your results are ready</p>
+            </div>
+        </div>
+        
+        <div class="results-content-wrapper">
+            <!-- Green Success Block -->
+            <div class="success-metrics-block">
+                <div class="success-block-header">
+                    <i class="fas fa-trophy"></i>
+                    <h3>Exam Results</h3>
+                </div>
+                <div class="success-metrics-grid">
+                    <div class="success-metric-item">
+                        <div class="metric-icon-wrapper">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <div class="metric-content">
+                            <span class="metric-label">Student Name</span>
+                            <span class="metric-value" id="final-name">-</span>
+                        </div>
+                    </div>
+                    <div class="success-metric-item">
+                        <div class="metric-icon-wrapper">
+                            <i class="fas fa-question-circle"></i>
+                        </div>
+                        <div class="metric-content">
+                            <span class="metric-label">Total Questions</span>
+                            <span class="metric-value" id="total-q">0</span>
+                        </div>
+                    </div>
+                    <div class="success-metric-item">
+                        <div class="metric-icon-wrapper">
+                            <i class="fas fa-check-double"></i>
+                        </div>
+                        <div class="metric-content">
+                            <span class="metric-label">Questions Answered</span>
+                            <span class="metric-value" id="answered-count">0</span>
+                        </div>
+                    </div>
+                    <div class="success-metric-item highlight">
+                        <div class="metric-icon-wrapper">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="metric-content">
+                            <span class="metric-label">Correct Answers</span>
+                            <span class="metric-value" id="correct-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Incorrect Answers Section -->
+            <div id="incorrect-section" class="incorrect-section">
+                <div class="section-header">
+                    <i class="fas fa-clipboard-check"></i>
+                    <h3>Answer Review & Corrections</h3>
+                </div>
+                <div id="review-list"></div>
+            </div>
+
+            <!-- Arabic Congratulatory Message -->
+            <div class="arabic-message-block">
+                <div class="arabic-message-content">
+                    <i class="fas fa-star"></i>
+                    <p class="arabic-text">تهانينا على إتمام الامتحان، نقدر جهودك، ونتمنى لك المزيد من النجاح والتميز</p>
+                    <p class="arabic-translation">Congratulations on completing the exam, we appreciate your efforts, and we wish you continued success and excellence.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="data/questions.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Load and display results when page loads
+        window.addEventListener('DOMContentLoaded', function() {
+            if (typeof displayResults === 'function') {
+                displayResults();
+            } else {
+                // Wait a bit if script hasn't loaded yet
+                setTimeout(function() {
+                    if (typeof displayResults === 'function') {
+                        displayResults();
+                    }
+                }, 500);
+            }
+        });
+    </script>
+</body>
+</html>
+
